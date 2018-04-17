@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Holiday - Tours</title>
+<!--
+Holiday Template
+http://www.templatemo.com/tm-475-holiday
+-->
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700' rel='stylesheet' type='text/css'>
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet"> 
+  <link href="css/flexslider.css" rel="stylesheet"> 
+  <link href="css/templatemo-style.css" rel="stylesheet">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<style>
+ol {
+	font-size: 20px;
+	padding: 10px;
+
+}
+
+
+
+
+</style>
+  </head>
+  <body class="tm-gray-bg">
+  	<!-- Header -->
+  	<div class="tm-header">
+  		<div class="container">
+  			<div class="row">
+  				<div class="col-lg-6 col-md-4 col-sm-3 tm-site-name-container">
+  					<a href="#" class="tm-site-name"><em>NHS</em></a>	
+  				</div>
+	  			<div class="col-lg-6 col-md-8 col-sm-9">
+	  				<div class="mobile-menu-icon">
+		              <i class="fa fa-bars"></i>
+		            </div>
+	  				<nav class="tm-nav">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="about.html">Gallery</a></li>
+							<li><a href="tours.html" class="active">Statistics</a></li>
+							<li><a href="contact.html">Data Capture</a></li>
+						</ul>
+					</nav>		
+	  			</div>				
+  			</div>
+  		</div>	  	
+  	</div>
+	
+	<!-- Banner -->
+	<section class="tm-banner">
+		<!-- Flexslider -->
+		<div class="flexslider flexslider-banner">
+		  <ul class="slides">
+		    <li>
+			    <div class="tm-banner-inner">
+					<h1 class="tm-banner-title"> Learn <span class="tm-yellow-text"> More</span> about smoking</h1>
+		
+					<a href="#more" class="tm-banner-link">Learn More</a>	
+
+				</div>
+				 <img src="img/statspreview.jpg" />
+		  </ul>
+		</div>			
+	</section>
+
+	<!-- gray bg -->
+	
+	<section class="section-padding-bottom">
+		<div class="container">
+			<div class="row">
+				<div class="tm-section-header section-margin-top">
+					<div class="col-lg-4 col-md-3 col-sm-3"><hr></div>
+					<div class="col-lg-4 col-md-6 col-sm-6"><h2  id="survey" class="tm-section-title">Smoking Statistics</h2></div>
+					<div class="col-lg-4 col-md-3 col-sm-3"><hr></div>	
+				</div>				
+			</div>
+	<br />
+	<ol id="more">
+		<li>There are about 10 million adults who smoke cigarettes in Great Britain:
+ this is about a sixth of the total UK population
+ In Great Britain 22% of adult men and 17% of
+adult women are smokers.</li>
+<br />
+		<li>Two-thirds of smokers start before age 18.</li>
+		<br />
+		<li>60% of smokers say they would find it hard to last a whole day without smoking and 70% have their first cigarette of the day within one hour of waking.</li>
+		<br />
+		<li>About half of all regular cigarette smokers will eventually be killed by their addiction.
+</li><br />
+		<li>Every year, around 100,000 smokers in the UK die from smoking related causes.
+</li><br />
+		<li>Smoking accounts for over one-third of respiratory deaths, over one-quarter of cancer deaths, and about one-seventh of cardiovascular disease deaths.</li><br />
+		<li>Tobacco smoke:
+contains over 7,000 chemical compounds, present as either gases or as tiny particles. These include carbon monoxide, arsenic, formaldehyde, cyanide, benzene, toluene and acrolein.</li><br />
+	</ol>
+		</section>
+	<footer class="tm-black-bg">
+		<div class="container">
+			<div class="row">
+				<p class="tm-copyright-text">Copyright &copy; 2084 Your Company Name 
+                
+                | Designed by <a rel="nofollow" href="http://www.templatemo.com" target="_parent">templatemo</a></p>
+			</div>
+		</div>		
+	</footer>
+	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>      		<!-- jQuery -->
+  	<script type="text/javascript" src="js/moment.js"></script>							<!-- moment.js -->
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>					<!-- bootstrap js -->
+	<script type="text/javascript" src="js/bootstrap-datetimepicker.min.js"></script>	<!-- bootstrap date time picker js, http://eonasdan.github.io/bootstrap-datetimepicker/ -->
+	<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+   	<script type="text/javascript" src="js/templatemo-script.js"></script>      		<!-- Templatemo Script -->
+	<script>
+		// HTML document is loaded. DOM is ready.
+		$(function() {
+
+			$('#hotelCarTabs a').click(function (e) {
+			  e.preventDefault()
+			  $(this).tab('show')
+			})
+
+        	$('.date').datetimepicker({
+            	format: 'MM/DD/YYYY'
+            });
+            $('.date-time').datetimepicker();
+           
+			// https://css-tricks.com/snippets/jquery/smooth-scrolling/
+		  	$('a[href*=#]:not([href=#])').click(function() {
+			    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+			      var target = $(this.hash);
+			      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+			      if (target.length) {
+			        $('html,body').animate({
+			          scrollTop: target.offset().top
+			        }, 1000);
+			        return false;
+			      }
+			    }
+		  	});
+		});
+		
+		// Load Flexslider when everything is loaded.
+		$(window).load(function() {	  		
+		    $('.flexslider').flexslider({
+			    controlNav: false
+		    });
+	  	});
+	</script>
+ </body>
+ </html>
